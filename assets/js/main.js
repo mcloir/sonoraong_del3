@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="col-md-6">
             <img
-              src="assets/images/missao-imagem.jpg"
+              src="assets/images/missao-imagem.webp"
               alt="Crianças aprendendo música"
               style="border-radius: var(--border-radius)"
             />
