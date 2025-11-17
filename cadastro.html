@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cadastre-se para ser voluntário ou apoiador do Sonora Missão Musical."
+    />
+    <title>Participe - Sonora Missão Musical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="index.html" class="header-logo-container">
+          <picture>
+            <source
+              srcset="assets/images/logosonoramm.webp"
+              type="image/webp"
+            />
+            <img
+              src="assets/images/logosonoramm.jpg"
+              alt="Logomarca Sonora Missão Musical"
+              class="logo"
+            />
+          </picture>
+          <h1>Sonora Missão Musical</h1>
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li class="dropdown">
+              <a href="projetos.html">Projetos</a>
+              <ul class="dropdown-menu">
+                <li><a href="projetos.html#pifanos">Pífanos e Percussão</a></li>
+                <li><a href="projetos.html#rock">Acordes do Rock</a></li>
+                <li><a href="projetos.html#classica">Camerata Clássica</a></li>
+              </ul>
+            </li>
+            <li><a href="cadastro.html" class="active">Participe</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile-nav" id="mobile-nav">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Participe</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+          <span class="hamburger-icon"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="row">
+        <div class="col-lg-8" style="grid-column: 3 / span 8; margin: 0 auto">
+          <h1 style="text-align: center">Junte-se a Nós!</h1>
+          <p style="text-align: center">
+            Preencha o formulário abaixo para se cadastrar como voluntário ou
+            apoiador. Entraremos em contato em breve.
+          </p>
+
+          <form action="/enviar-cadastro" method="POST">
+            <fieldset>
+              <legend>Seus Dados Pessoais</legend>
+
+              <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome_completo" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="seu.email@exemplo.com"
+                />
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="cpf">CPF:</label>
+                  <input
+                    type="text"
+                    id="cpf"
+                    name="cpf"
+                    required
+                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                    placeholder="000.000.000-00"
+                  />
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="telefone">Telefone (com DDD):</label>
+                  <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    required
+                    pattern="\(\d{2}\) \d{5}-\d{4}"
+                    placeholder="(00) 00000-0000"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="nascimento">Data de Nascimento:</label>
+                <input
+                  type="date"
+                  id="nascimento"
+                  name="data_nascimento"
+                  required
+                />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Seu Endereço</legend>
+
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <label for="cep">CEP:</label>
+                  <input
+                    type="text"
+                    id="cep"
+                    name="cep"
+                    required
+                    pattern="\d{5}-\d{3}"
+                    placeholder="00000-000"
+                  />
+                </div>
+                <div class="col-md-8 form-group">
+                  <label for="endereco">Endereço (Rua, Nº, Bairro):</label>
+                  <input type="text" id="endereco" name="endereco" required />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="cidade">Cidade:</label>
+                  <input type="text" id="cidade" name="cidade" required />
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="estado">Estado:</label>
+
+                  <select id="estado" name="estado" required>
+                    <option value="">Selecione...</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option valuea="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%">
+              Enviar Cadastro
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>&copy; 2025 Sonora Missão Musical. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

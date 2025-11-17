@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sonora Missão Musical: Ensinando música e transformando vidas de crianças na Paraíba."
+    />
+    <title>Sonora Missão Musical - Transformando Vidas com Música</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="index.html" class="header-logo-container">
+          <picture>
+            <source
+              srcset="assets/images/logosonoramm.webp"
+              type="image/webp"
+            />
+            <img
+              src="assets/images/logosonoramm.jpg"
+              alt="Logomarca Sonora Missão Musical"
+              class="logo"
+            />
+          </picture>
+          <h1>Sonora Missão Musical</h1>
+        </a>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="active">Início</a></li>
+            <li class="dropdown">
+              <a href="projetos.html">Projetos</a>
+              <ul class="dropdown-menu">
+                <li><a href="#pifanos">Pífanos e Percussão</a></li>
+                <li><a href="#rock">Acordes do Rock</a></li>
+                <li><a href="#classica">Camerata Clássica</a></li>
+              </ul>
+            </li>
+            <li><a href="cadastro.html">Participe</a></li>
+          </ul>
+        </nav>
+
+        <nav class="mobile-nav" id="mobile-nav">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Participe</a></li>
+          </ul>
+        </nav>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+          <span class="hamburger-icon"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="container">
+        <h2>Música, Futuro e Oportunidade</h2>
+        <p>
+          Ensinamos música para crianças e adolescentes em situação de
+          vulnerabilidade na Paraíba, oferecendo um caminho de expressão,
+          cultura e apoio psicossocial.
+        </p>
+        <a href="cadastro.html" class="btn btn-primary">Quero Apoiar</a>
+      </section>
+
+      <div class="container">
+        <section id="sobre" class="row">
+          <div class="col-md-6">
+            <h2>Nossa Missão</h2>
+            <p>
+              A Sonora Missão Musical nasceu do sonho de unir gerações através
+              da música. Nossa missão é oferecer gratuitamente aulas de
+              instrumentos tradicionais da Paraíba, rock e música clássica,
+              criando um ambiente seguro para o desenvolvimento social e
+              emocional de nossos alunos.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="assets/images/missao-imagem.jpg"
+              alt="Crianças aprendendo música"
+              style="border-radius: var(--border-radius)"
+            />
+          </div>
+        </section>
+
+        <hr style="border-color: var(--color-tertiary-earth)" />
+
+        <section id="contato" class="row">
+          <div class="col-md-6">
+            <h2>Entre em Contato</h2>
+            <p>
+              Adoraríamos ouvir você. Seja para parcerias, dúvidas ou para
+              conhecer nosso espaço.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <address>
+              <strong>Sonora Missão Musical</strong><br />
+              Rua da Esperança, 14 - Bairro da Música<br />
+              Campina Grande, PB, CEP: 58400-530<br />
+              <br />
+              <strong>Telefone:</strong>
+              <a href="tel:+5583999991414">(83) 99999-1414</a><br />
+              <strong>Email:</strong>
+              <a href="mailto:contato@sonoramm.org">contato@sonoramm.org</a>
+            </address>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>&copy; 2025 Sonora Missão Musical. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
