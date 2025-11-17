@@ -640,3 +640,38 @@ legend {
   padding-top: var(--space-lg);
   padding-bottom: var(--space-lg);
 }
+
+/*=============================================
+  9. COMPONENTES DE FEEDBACK (JS)
+=============================================*/
+
+/* Para mensagens de erro em cada campo do formulário */
+.form-error-message {
+  color: var(--color-error);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  margin-top: var(--space-xs);
+  display: none;
+}
+
+/* Para a mensagem de status geral do formulário (sucesso/erro) */
+#form-status-message {
+  padding: var(--space-sm);
+  margin-bottom: var(--space-md);
+  border-radius: var(--border-radius);
+  display: none;
+  text-align: center;
+  font-weight: var(--font-weight-bold);
+}
+
+#form-status-message.success {
+  background-color: var(--color-success);
+  color: var(--color-text-light);
+  display: block;
+}
+
+#form-status-message.error {
+  background-color: var(--color-error);
+  color: var(--color-text-light);
+  display: block;
+}
